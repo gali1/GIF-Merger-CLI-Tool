@@ -1,4 +1,4 @@
-Certainly! Below is a detailed README that includes a project title, description, getting started guide, use-case examples, and other relevant sections based on the GIF Merger CLI Tool you've developed.
+Certainly! Here's an updated README for the GIF Merger CLI Tool, focusing on the project description, getting started guide, usage examples, and other relevant sections without mentioning OpenAI.
 
 ---
 
