@@ -1,103 +1,132 @@
+Certainly! Below is a detailed README that includes a project title, description, getting started guide, use-case examples, and other relevant sections based on the GIF Merger CLI Tool you've developed.
+
+---
+
 # GIF Merger CLI Tool
 
-A command-line tool for merging multiple GIF files into a single GIF, with options for horizontal or vertical concatenation.
+Merge multiple GIF files into a single GIF, with options for orientation and lossy compression.
+
+## Description
+
+The GIF Merger CLI Tool allows users to merge multiple GIF files into a single GIF file. It supports both horizontal and vertical orientations for merging. Users can also choose to apply lossy compression to reduce the file size of the merged GIF, with a compression level adjustable from 0% (no compression) to 200% (maximum compression).
 
 ## Getting Started
 
-These instructions will help you set up and run the GIF Merger CLI Tool on your local machine for development and testing purposes.
+These instructions will help you set up and use the GIF Merger CLI Tool on your local machine.
 
 ### Prerequisites
 
-You need Python 3.x and the following libraries installed:
-
-- **Pillow**: Python Imaging Library (PIL) fork
-- **tqdm**: Progress bar library
-
-Install these libraries using `pip`:
-
-```bash
-pip install pillow tqdm
-```
+- Python 3.6 or higher installed on your system.
+- `pip` package manager to install Python dependencies.
 
 ### Installing
 
-1. **Clone the repository**:
+1. Clone the repository to your local machine:
 
-    ```bash
-    git clone https://github.com/yourusername/gif-merger-cli.git
-    cd gif-merger-cli
-    ```
+   ```bash
+   git clone https://github.com/your/repository.git
+   ```
 
-2. **Install dependencies**:
+2. Navigate into the project directory:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   cd gif-merger-cli-tool
+   ```
 
-3. **Run the script**:
+3. Install Python dependencies using `pip`:
 
-    ```bash
-    python gif_merger.py
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Usage
+### Running the Tool
 
-1. Run the script:
+To run the GIF Merger CLI Tool, execute the following command in your terminal:
 
-    ```bash
-    python gif_merger.py
-    ```
+```bash
+python gif_merger.py
+```
 
-2. Follow the prompts:
-    - Enter the path to each GIF file you wish to merge.
-    - Type `done` when you have finished entering file paths.
-    - Specify the output file path (e.g., `output.gif`).
-    - Choose the merging orientation (`horizontal` or `vertical`).
+Follow the prompts to select GIF files, choose output options, and optionally apply compression.
 
-3. The merged GIF will be saved to the specified output path.
+## Usage Examples
+
+### Example 1: Basic GIF Merging
+
+Merge two GIF files (`file1.gif` and `file2.gif`) into a single GIF named `merged.gif` with vertical orientation and no compression.
+
+1. Input:
+
+   ```
+   Enter path to GIF file (or 'done' to finish): file1.gif
+   Enter path to GIF file (or 'done' to finish): file2.gif
+   Enter path to GIF file (or 'done' to finish): done
+   Enter path for the output merged GIF file (e.g., 'output.gif'): merged.gif
+   Enter orientation ('horizontal' or 'vertical'): vertical
+   Apply compression to the merged GIF? (yes/no): no
+   ```
+
+2. Output:
+   - Merged GIF file `merged.gif` created in the current directory.
+
+### Example 2: GIF Merging with Compression
+
+Merge three GIF files (`gif1.gif`, `gif2.gif`, and `gif3.gif`) into a single GIF named `merged_compressed.gif` with horizontal orientation and 150% compression.
+
+1. Input:
+
+   ```
+   Enter path to GIF file (or 'done' to finish): gif1.gif
+   Enter path to GIF file (or 'done' to finish): gif2.gif
+   Enter path to GIF file (or 'done' to finish): gif3.gif
+   Enter path to GIF file (or 'done' to finish): done
+   Enter path for the output merged GIF file (e.g., 'output.gif'): merged_compressed.gif
+   Enter orientation ('horizontal' or 'vertical'): horizontal
+   Apply compression to the merged GIF? (yes/no): yes
+   Enter compression level (0-200, where 0 is no compression and 200 is maximum compression): 150
+   ```
+
+2. Output:
+   - Merged GIF file `merged_compressed.gif` created with 150% compression applied.
 
 ## Running the Tests
 
-To ensure the script functions as expected, you can run the tests provided. However, this project does not currently include automated tests.
-
-### Manual Testing
-
-1. **Test with sample GIFs**:
-    - Create or obtain two or more GIF files.
-    - Follow the usage instructions to merge them and verify the output.
-
-2. **Edge Cases**:
-    - Test with GIFs of varying dimensions.
-    - Check the behavior when fewer than two GIFs are provided.
+Currently, the GIF Merger CLI Tool does not have automated tests. Manual testing is recommended by running the tool with various configurations and verifying the output GIF files.
 
 ## Deployment
 
-For deploying this tool, ensure Python and the necessary libraries are installed on the target machine. You may want to package the script and its dependencies into a virtual environment or Docker container for easier deployment.
+To deploy the GIF Merger CLI Tool on a live system, follow the installation instructions and ensure Python and necessary dependencies are installed.
 
 ## Built With
 
-- [Pillow](https://python-pillow.org/) - Python Imaging Library (PIL) fork used for image processing.
-- [tqdm](https://tqdm.github.io/) - Progress bar library used for visualizing the process.
+- Python - Programming language used
+- PIL (Pillow) - Python Imaging Library for image processing
+- tqdm - Progress bar library for command-line interfaces
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct and the process for submitting pull requests.
+Contributions to the GIF Merger CLI Tool are welcome! Please check the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/yourusername/gif-merger-cli/tags).
+We use [Semantic Versioning](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/repository/tags).
 
 ## Authors
 
-* **Your Name** - *Initial work* - [Your GitHub Profile](https://github.com/yourusername)
+- Your Name - [Your GitHub Profile](https://github.com/your-profile)
 
-See also the list of [contributors](https://github.com/yourusername/gif-merger-cli/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/your/repository/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
-* Special thanks to contributors and open-source libraries that made this project possible.
-* Inspiration drawn from similar tools and community resources.
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+---
+
+This README provides comprehensive information on setting up, using, and understanding the GIF Merger CLI Tool. Adjust the placeholders (`your/repository`, `Your Name`, `Your GitHub Profile`, etc.) with actual project-specific details.
