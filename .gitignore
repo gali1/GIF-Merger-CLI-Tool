@@ -1,18 +1,62 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Python Bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
 
-# Other files and folders
-.settings/
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+.env/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Dependency directories
+pip-log.txt
+pip-delete-this-directory.txt
+Pipfile.lock
+
+# Distribution / Packaging
+*.egg
+*.egg-info
+dist/
+build/
+*.egg-info/
+*.whl
+
+# Test and Coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache
+.coverage
+*.orig
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Local environment files
+*.env
